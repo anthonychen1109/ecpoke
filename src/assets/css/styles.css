@@ -1,6 +1,11 @@
 html {
   height: 100%;
 }
+
+.temporary {
+  text-align: center;
+}
+
 /* HEADER */
 .navbar {
   display: flex;
