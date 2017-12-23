@@ -24,6 +24,7 @@ const Header = () => {
             </li>
             <li className="nav-item">
               <Link to="/contact" className="nav-link" href="#">Contact</Link>
+              test
             </li>
           </ul>
         </div>
