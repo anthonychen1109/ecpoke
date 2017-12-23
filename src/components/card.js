@@ -9,7 +9,7 @@ const Card = (props) => {
 		    </div>
 
 		    <div>
-		    	<img className="card-img" src={props.foodPic} alt="Card image cap" />
+		    	<img className="card-img" src={props.foodPic} alt={props.foodPic} />
 		    </div>
 
 		    <div className="card-bottom">
