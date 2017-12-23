@@ -1,0 +1,207 @@
+html {
+  height: 100%;
+}
+
+/*HEADER*/
+
+.navbar {
+  background-color: #A8A8A8;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar h4 {
+  color: white;
+}
+
+.nav-logo {
+  max-width: 200px;
+  width:100%;
+}
+
+  .navbar div {
+    width:20%;
+    text-align:center;
+  }
+
+.navbar-left h4, .navbar-right h4 {
+  padding: 80px;
+}
+
+/*BODY*/
+
+.body-imgs {
+  background: url('./images/pokebowl.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.body-block {
+  display: flex;
+  height: 60%;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.card-block {
+  border-radius: 10px;
+}
+
+.card {
+  border-radius: 10px;
+  height: 30%;
+  margin: 5px 5px;
+  width: 18%;
+}
+
+.card-title {
+  text-align: center;
+}
+
+.body-imgs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.card-img {
+  border-radius: 10px;
+  height: 100%;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  width: 100%;
+}
+
+.card-top, .card-bottom {
+  margin-top: 5px;
+}
+
+.card-title, .card-text {
+  color: black;
+  padding: 5px;
+}
+
+/*FOOTER*/
+.footer {
+  display: flex;
+  flex-direction: row;
+  height: 30%;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+.hours h6, .address h6 {
+  padding: 10px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 479px){
+  .body-imgs {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card {
+    height: 50%;
+    width: 50%;
+  }
+
+  .card-block {
+    height: 100%;
+    width: 100%;
+  }
+
+  .card-img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navbar {
+    display: flex;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px){
+  .body-imgs {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    height: 33%;
+    width: 33%;
+  }
+
+  .navbar {
+    background-color: #A8A8A8;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .navbar h4 {
+    color: white;
+  }
+
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+  .body-imgs {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .card {
+    height: 30%;
+    width: 30%;
+  }
+
+  .card-block {
+    height: 100%;
+    width: 100%;
+  }
+
+  .card-img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .navbar {
+    background-color: #A8A8A8;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .navbar h4 {
+    color: white;
+  }
+
+  .navbar-left, .navbar-right {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+  }
+
+  .navbar-left h4, .navbar-right h4 {
+    padding: 80px;
+  }
+}
+
+/*@media only screen and (min-width: 992px) and (max-width: 1999px){
+
+}*/
