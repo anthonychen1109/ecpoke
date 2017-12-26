@@ -45,6 +45,8 @@ html {
 }
 
 .card {
+  background-color: white;
+  border: 1px solid black;
   border-radius: 10px;
   height: 30%;
   margin: 5px 5px;
@@ -64,20 +66,12 @@ html {
 }
 
 .card-img {
+  border: 1px solid black;
   border-radius: 10px;
   height: 100%;
   margin-bottom: 5px;
   margin-top: 5px;
   width: 100%;
-}
-
-.card-top, .card-bottom {
-  margin-top: 5px;
-}
-
-.card-title, .card-text {
-  color: black;
-  padding: 5px;
 }
 
 .about h1, .menu h1, .contact h1 {
