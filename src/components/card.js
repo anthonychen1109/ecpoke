@@ -44,7 +44,7 @@ class Card extends Component {
 							onRequestClose={this.closeModal}
 							style={customStyles}
 							>
-							<button className="btn btn-danger" onClick={this.closeModal}>X</button>
+							<button className="btn btn-danger modal-btn" onClick={this.closeModal}>X</button>
 								<img className="modal-img"
 									src={this.props.foodPic}
 									alt={this.props.foodPic}

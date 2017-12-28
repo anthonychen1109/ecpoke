@@ -2,6 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
+
+  const refreshPage = () => window.location.reload()
+
   return (
     <div className="navbar-banner">
       <nav className="navbar navbar-toggleable-sm navbar-light bg-faded">
@@ -15,7 +18,7 @@ const Header = () => {
           <ul className="navbar-nav">
             <li className="nav-item">
               <Link to="/" className="nav-link" href="#"
-                onClick="window.location.reload()"
+                onClick={() => this.refreshPage()}
                 >
                   Home
                 <span className="sr-only">(current)</span>
@@ -28,7 +31,7 @@ const Header = () => {
               <a className="nav-link" href="#menu">Menu</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#footer">Contact</a>
+              <a className="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
