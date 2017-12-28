@@ -3,6 +3,7 @@ html {
 }
 
 .temporary {
+  font-family: 'Niconne';
   margin-top: 100px;
   text-align: center;
 }
@@ -58,6 +59,10 @@ html {
   font-style: italic;
 }
 
+.subtitle {
+  font-weight: 700;
+}
+
 .card-block {
   border-radius: 10px;
 }
@@ -100,7 +105,20 @@ html {
 
 .about-right {
   background-image: url('http://cdn-img.instyle.com/sites/default/files/styles/684xflex/public/images/2016/08/082516-poke-bowl.jpg?itok=achChbWh');
+  background-size:cover;
+  background-position: center;
+  min-height: 200px;
   width: 100%;
+}
+
+.modal-img {
+  position: relative;
+  display: table;
+  overflow-y: auto;
+  overflow-x: auto;
+  width: auto;
+  max-width: 50%;
+  margin-left: 25%;
 }
 
 /* FOOTER */
@@ -117,10 +135,14 @@ html {
 
 .footer h1 {
   font-family: 'Niconne', cursive;
+  font-size: 3rem;
+  font-weight: 300;
 }
 
 .footer h6 {
   font-family: "Magra";
+  font-size: 1.3rem;
+  font-weight: 300;
   line-height: 2rem;
 }
 
@@ -197,40 +219,5 @@ html {
 
   .navbar h4 {
     color: white;
-  }
-
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px){
-  .body-imgs {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .card {
-    height: 30%;
-    width: 30%;
-  }
-
-  .card-block {
-    height: 100%;
-    width: 100%;
-  }
-
-  .card-img {
-    height: 100%;
-    width: 100%;
-  }
-
-  .navbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .navbar-left, .navbar-right {
-    display: flex;
-    flex-direction: row;
-    margin: auto;
   }
 }
