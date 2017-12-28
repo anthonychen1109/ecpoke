@@ -45,14 +45,11 @@ html {
 }
 
 .card {
+  background-color: #F0FFF0;
   border-radius: 10px;
   height: 30%;
   margin: 5px 5px;
   width: 18%;
-}
-
-.card-title {
-  text-align: center;
 }
 
 .body-imgs {
@@ -69,15 +66,6 @@ html {
   margin-bottom: 5px;
   margin-top: 5px;
   width: 100%;
-}
-
-.card-top, .card-bottom {
-  margin-top: 5px;
-}
-
-.card-title, .card-text {
-  color: black;
-  padding: 5px;
 }
 
 .about h1, .menu h1, .contact h1 {

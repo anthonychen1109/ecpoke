@@ -13,7 +13,7 @@ const Footer = () => {
 				<h1>Open Hours:</h1>
 				<hr />
 				<h6>Monday-Thursday  11:00 AM-9:00PM</h6>
-				<h6>Friday-Saturday  1100 AM-10:00PM</h6>
+				<h6>Friday-Saturday  11:00 AM-10:00PM</h6>
 				<h6>Sunday 11:00 AM-9:00PM</h6>
 			</div>
 		</div>
