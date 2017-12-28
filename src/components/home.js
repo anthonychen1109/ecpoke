@@ -2,12 +2,15 @@ import React from 'react';
 
 //COMPONENTS
 import Card from './card';
+import About from './about';
 
 const Home = () => {
   return (
     <div>
       <h1 className="temporary">COMING SOON...</h1>
-    <div className="body-imgs">
+      <hr />
+    <div id="about"><About /></div>
+    <div id="menu" className="body-imgs">
       <Card foodPic={require('../assets/images/pic_500.JPG')} />
       <Card foodPic={require('../assets/images/pic_504.JPG')} />
       <Card foodPic={require('../assets/images/pic_507.JPG')} />

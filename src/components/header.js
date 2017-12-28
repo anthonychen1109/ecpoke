@@ -9,21 +9,26 @@ const Header = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="nav-left">
-          <img className="ecpoke-logo" src={require('../assets/images/logo.jpeg')} alt="ecpoke-logo"/>
+          <img className="ecpoke-logo" src={require('../assets/images/logo.png')} alt="ecpoke-logo"/>
         </div>
         <div className="collapse navbar-collapse nav-right" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <Link to="/" className="nav-link" href="#">Home <span className="sr-only">(current)</span></Link>
+              <Link to="/" className="nav-link" href="#"
+                onClick="window.location.reload()"
+                >
+                  Home
+                <span className="sr-only">(current)</span>
+              </Link>
             </li>
             <li className="nav-item">
-              <Link to="/about" className="nav-link" href="#">About</Link>
+              <a className="nav-link" href="#about">About</a>
             </li>
             <li className="nav-item">
-              <Link to="menu" className="nav-link" href="#">Menu</Link>
+              <a className="nav-link" href="#menu">Menu</a>
             </li>
             <li className="nav-item">
-              <Link to="/contact" className="nav-link" href="#">Contact</Link>
+              <a className="nav-link" href="#footer">Contact</a>
             </li>
           </ul>
         </div>
