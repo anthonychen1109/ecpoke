@@ -1,0 +1,81 @@
+// ###################### HEADER #########################
+.header {
+  background-image: url('../images/500.JPG');
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 85vh;
+  .header-logo {
+    margin: 0 auto;
+    max-width: 200px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
+// ###################### ABOUT #########################
+
+.about {
+  background-color: black;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  .about-text {
+    h1 {
+      color: red;
+      font-family: 'Niconne', cursive;
+      text-align: center;
+    }
+    h6 {
+      color: white;
+      text-align: center;
+    }
+    p {
+      color: white;
+    }
+  }
+}
+
+// ###################### PARALLAX #########################
+
+.parallax {
+  background-image: url('../images/428.JPG');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 500px;
+}
+
+.customize {
+  padding-top: 40px;
+  .build {
+    display: block;
+    background-color: brown;
+    box-shadow: 0px 4px 2px -2px #000000;
+    overflow: hidden;
+    .triangle {
+      padding: 27px;
+      transform: rotate(45deg) translate(50%,-40%);
+      background-color: white;
+      float: right;
+      max-width: 20%;
+    }
+    h2 {
+      color: white;
+      padding: 10px;
+      text-shadow: 0px 0px 3px black;
+    }
+  }
+  .bowl {
+    display: flex;
+    h2 {
+      color: white;
+      padding-top: 20px;
+    }
+  }
+}
