@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Images
-import Logo from '../static/images/logo.jpg';
+import Logo from '../static/images/logo.png';
 
 const Header = () => {
   return (

@@ -1,27 +1,34 @@
-import React from 'react';
+import React, { Component } from 'react';
+import Order from './order';
 
-const Parallax = () => {
-  return (
-    <div className="parallax">
-      <div className="customize container">
-        <div className="build">
+class Parallax extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
 
-          <div className="triangle">
-          </div>
-          <div>
-            <h2>Build Your Bowl</h2>
-          </div>
-        </div>
-        <div className="bowl">
-          <div className="bowl-left">
-            <h2>Base</h2>
-          </div>
-          <div className="bowl-right">
-          </div>
-        </div>
+    };
+  }
+
+  render() {
+    let divStyle = {
+      backgroundAttachment: 'fixed',
+      backgroundImage: 'url(' + this.props.img + ')',
+      backgroundPosition: '50% 50%',
+      backgroundRepeat: 'no-repeat',
+      backgroundSize: 'cover',
+      height: '60vh',
+      position: 'relative',
+      width: '100%'
+    };
+    return (
+      <div
+        className="parallax"
+        style={divStyle}
+      >
+      <Order />
       </div>
-    </div>
-  )
+    )
+  }
 }
 
 export default Parallax;
