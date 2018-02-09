@@ -1,16 +1,27 @@
 @import "variables";
 
+@mixin build {
+  padding: 5%;
+  width: 50%;
+}
+
+@font-face {
+  font-family: Tiki;
+  src: url('Tiki-Tropic.ttf');
+}
+
+@font-face {
+  font-family: SPINSTEE;
+  src: url('SPINSTEE.TTF');
+}
+
 * {
   margin: 0;
   padding: 0;
 }
 
-h2 {
-  font-family: FZShuTi;
-}
-
-p {
-  font-family: 'Roboto', sans-serif;
+h2, h1, h5 {
+  font-family: Tiki;
 }
 
 // ###################### HEADER #########################
@@ -43,8 +54,8 @@ p {
     padding-bottom: $padding-bottom + 10;
     padding-top: $padding-top+ 10;
     h1 {
-      color: #639fb9;
-      font-family: 'Niconne', cursive;
+      color: $theme-color;
+      // font-family: 'Tiki';
       text-align: center;
     }
     h6 {
@@ -53,6 +64,7 @@ p {
     }
     p {
       color: $para-color;
+      // font-family: Aloha;
     }
   }
 }
@@ -65,22 +77,21 @@ p {
 }
 
 .customize {
-  background-color: #FAEBD7;
   padding-top: $padding-top;
   .build {
     display: block;
-    background-color: brown;
+    background-color: $theme-color;
     box-shadow: 0px 4px 2px -2px #000000;
     overflow: hidden;
     .triangle {
       padding: 27px;
       transform: rotate(45deg) translate(50%,-40%);
-      background-color: #FAEBD7;
+      background-color: $header-color;
       float: right;
       max-width: 20%;
     }
     h2 {
-      color: #FAEBD7;
+      color: $header-color;
       padding: 10px;
       text-shadow: 0px 0px 3px black;
     }
@@ -99,6 +110,7 @@ p {
       .bowl-left, .bowl-right {
         border: none;
         padding: 0;
+        width: 100%;
         h2, h5, p {
           text-align: center;
         }
@@ -108,26 +120,24 @@ p {
 
   .bowl-left {
     border-right: 2px dotted black;
-    padding: 0 200px 0 40px;
   }
 
-  .circle {
-    background-color: brown;
-    color: #FAEBD7;
-    border: 1px solid black;
-    border-radius: 50%;
-    padding: 0 5px 0 5px;
+  .bowl-left, .bowl-right {
+  @include build;
+    h2 {
+      padding-bottom: 10px;
+    }
   }
 
-  .bowl-right {
-    padding: 0 40px 0 200px;
+  .sub-header {
+    font-size: .8em;
   }
 
 }
 
 // ###################### GALLERY #########################
 .gallery-container {
-  background-color: #FAEBD7;
+  background-color: $theme-color;
 }
 
 .gallery {
@@ -135,17 +145,25 @@ p {
   flex-direction: column;
   padding-bottom: $padding-bottom;
   padding-top: $padding-top;
-  h2 {
-    color: #639fb9;
-    font-family: 'Niconne', cursive;
+  h1 {
+    color: $header-color;
     text-align: center;
     padding-bottom: $padding-bottom / 2;
   }
 }
 
-
 .modal-img {
   max-width: 100%;
+}
+
+.gal-modal {
+  img {
+    &:hover {
+      opacity: .7;
+      transform: scale(1.05);
+      transition: .35s;
+    }
+  }
 }
 
 .grid-item {
@@ -162,9 +180,9 @@ p {
 
 // ###################### ORDER #########################
 .order {
+  top: 50%;
+  left: 50%;
   .order-grouping {
-    top: 50%;
-    left: 50%;
   }
   h2 {
     color: $header-color;
@@ -176,6 +194,8 @@ p {
     padding-top: $padding-top;
     text-align: center;
     button {
+      background: linear-gradient(#90CAF9, #42A5F5);
+      color: black;
       padding: 20px;
     }
   }
@@ -187,7 +207,7 @@ p {
   background-color: $theme-background;
   padding-bottom: $padding-bottom + 10;
   h2 {
-    color: #639fb9;
+    color: $theme-color;
     text-align: center;
   }
   .contact-header {

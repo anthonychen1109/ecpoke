@@ -1,12 +1,15 @@
+@font-face {
+  font-family: Tiki;
+  src: url("Tiki-Tropic.ttf"); }
+@font-face {
+  font-family: SPINSTEE;
+  src: url("SPINSTEE.TTF"); }
 * {
   margin: 0;
   padding: 0; }
 
-h2 {
-  font-family: FZShuTi; }
-
-p {
-  font-family: 'Roboto', sans-serif; }
+h2, h1, h5 {
+  font-family: Tiki; }
 
 .header {
   background-image: url("../images/500.JPG");
@@ -33,7 +36,6 @@ p {
     padding-top: 50px; }
     .about .about-text h1 {
       color: #639fb9;
-      font-family: 'Niconne', cursive;
       text-align: center; }
     .about .about-text h6 {
       color: white;
@@ -47,21 +49,20 @@ p {
   padding-bottom: 40px; }
 
 .customize {
-  background-color: #FAEBD7;
   padding-top: 40px; }
   .customize .build {
     display: block;
-    background-color: brown;
+    background-color: #639fb9;
     box-shadow: 0px 4px 2px -2px #000000;
     overflow: hidden; }
     .customize .build .triangle {
       padding: 27px;
       transform: rotate(45deg) translate(50%, -40%);
-      background-color: #FAEBD7;
+      background-color: white;
       float: right;
       max-width: 20%; }
     .customize .build h2 {
-      color: #FAEBD7;
+      color: white;
       padding: 10px;
       text-shadow: 0px 0px 3px black; }
   .customize .bowl {
@@ -76,37 +77,40 @@ p {
         flex-direction: column; }
         .customize .bowl .bowl-left, .customize .bowl .bowl-right {
           border: none;
-          padding: 0; }
+          padding: 0;
+          width: 100%; }
           .customize .bowl .bowl-left h2, .customize .bowl .bowl-left h5, .customize .bowl .bowl-left p, .customize .bowl .bowl-right h2, .customize .bowl .bowl-right h5, .customize .bowl .bowl-right p {
             text-align: center; } }
   .customize .bowl-left {
-    border-right: 2px dotted black;
-    padding: 0 200px 0 40px; }
-  .customize .circle {
-    background-color: brown;
-    color: #FAEBD7;
-    border: 1px solid black;
-    border-radius: 50%;
-    padding: 0 5px 0 5px; }
-  .customize .bowl-right {
-    padding: 0 40px 0 200px; }
+    border-right: 2px dotted black; }
+  .customize .bowl-left, .customize .bowl-right {
+    padding: 5%;
+    width: 50%; }
+    .customize .bowl-left h2, .customize .bowl-right h2 {
+      padding-bottom: 10px; }
+  .customize .sub-header {
+    font-size: .8em; }
 
 .gallery-container {
-  background-color: #FAEBD7; }
+  background-color: #639fb9; }
 
 .gallery {
   display: flex;
   flex-direction: column;
   padding-bottom: 40px;
   padding-top: 40px; }
-  .gallery h2 {
-    color: #639fb9;
-    font-family: 'Niconne', cursive;
+  .gallery h1 {
+    color: white;
     text-align: center;
     padding-bottom: 20px; }
 
 .modal-img {
   max-width: 100%; }
+
+.gal-modal img:hover {
+  opacity: .7;
+  transform: scale(1.05);
+  transition: .35s; }
 
 .grid-item {
   width: 33.33%; }
@@ -117,19 +121,21 @@ p {
       .grid-item img {
         padding: 1px; } }
 
-.order .order-grouping {
+.order {
   top: 50%;
   left: 50%; }
-.order h2 {
-  color: white;
-  padding-top: 40px;
-  text-align: center;
-  text-shadow: 0px 0px 3px black; }
-.order div {
-  padding-top: 40px;
-  text-align: center; }
-  .order div button {
-    padding: 20px; }
+  .order h2 {
+    color: white;
+    padding-top: 40px;
+    text-align: center;
+    text-shadow: 0px 0px 3px black; }
+  .order div {
+    padding-top: 40px;
+    text-align: center; }
+    .order div button {
+      background: linear-gradient(#90CAF9, #42A5F5);
+      color: black;
+      padding: 20px; }
 
 .contact {
   background-color: white;
