@@ -1,4 +1,8 @@
-import React from 'react';
+import React, { Component } from 'react';
+import Masonry from 'react-masonry-component';
+
+// Components
+import GalleryModal from './modal';
 
 const images = [
   {name: '414.JPG'},
@@ -19,18 +23,45 @@ const images = [
   {name: '773.JPG'}
 ]
 
-const Gallery = () => {
-  return (
-    <div className="gallery">
-      {images.map((item,index) => {
-        return (
-          <div key={index}>
-            <img src={require(`../static/images/${item.name}`)} alt="{item.name}"/>
+class Gallery extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+
+    };
+  }
+
+  render() {
+    var masonryOptions = {
+      transitionDuration: 0
+    };
+    const masonry = images.map((item, index) => {
+      return (
+        <div key={item+index} className="grid-item">
+          <GalleryModal image={require(`../static/images/${item.name}`)}/>
+        </div>
+      )
+    })
+    return (
+      <div className="gallery-container">
+        <div className="gallery container">
+          <div>
+            <h2>Gallery</h2>
           </div>
-        )
-      })}
-    </div>
-  )
+          <div>
+              <Masonry
+                elementType={'div'}
+                options={masonryOptions}
+                disableImagesLoaded={false}
+                updateOnEachImageLoad={false}
+              >
+                {masonry}
+            </Masonry>
+          </div>
+        </div>
+      </div>
+    )
+  }
 }
 
 export default Gallery;
