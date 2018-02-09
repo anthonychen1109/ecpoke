@@ -44,7 +44,10 @@ const Mixins = () => {
     <div className="bowl-item">
       {mixins.map((item, index) => {
         return (
-          <p key={index}>{index+1}. {item.name}</p>
+          <div key={index}>
+            <p>{index+1}. {item.name}</p>
+            <hr />
+          </div>
         )
       })}
     </div>

@@ -46,7 +46,7 @@ class Gallery extends Component {
       <div className="gallery-container">
         <div className="gallery container">
           <div>
-            <h2>Gallery</h2>
+            <h1>Gallery</h1>
           </div>
           <div>
               <Masonry

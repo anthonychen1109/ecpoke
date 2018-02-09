@@ -6,7 +6,7 @@ const Order = () => {
       <div className="order-grouping">
         <h2>Menu and Ordering</h2>
         <div>
-          <button className="btn btn-warning">Online Order/Menu</button>
+          <button className="btn btn-primary">Online Order/Menu</button>
         </div>
       </div>
     </div>

@@ -23,23 +23,17 @@ const Build = () => {
           <div className="bowl-left">
             <h2><span className="circle">1.</span> Base</h2>
             <Base />
-            <h2><span className="circle">2.</span> Protein</h2>
-            <h5>$9.75 (2 scoops)</h5>
-            <h5>$2.75 (3 scoops)</h5>
+            <h2><span className="circle">2.</span> Protein <span className="sub-header" >$9.75 (2 scoops)</span> <span className="sub-header" >$12.75 (3 scoops)</span></h2>
             <Proteins />
-            <h2><span className="circle">3.</span> Mix-ins</h2>
-            <p className="text-center">(Up to 5)</p>
+            <h2><span className="circle">3.</span> Mix-ins <span className="sub-header" >(Up to 5)</span></h2>
             <Mixins />
           </div>
           <div className="bowl-right">
-            <h2><span className="circle">4.</span> Sauce</h2>
-            <p>(Up to 2)</p>
+            <h2><span className="circle">4.</span> Sauce <span className="sub-header" >(Up to 2)</span></h2>
             <Sauces />
-            <h2><span className="circle">5.</span> Toppings</h2>
-            <p>(Up to 4)</p>
+            <h2><span className="circle">5.</span> Toppings <span className="sub-header" >(Up to 4)</span></h2>
             <Toppings />
-            <h2><span className="circle">6.</span> Add Crunch</h2>
-            <p>(Up to 3)</p>
+            <h2><span className="circle">6.</span> Add Crunch <span className="sub-header" >(Up to 3)</span></h2>
             <Crunch />
           </div>
         </div>

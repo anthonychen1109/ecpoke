@@ -35,7 +35,10 @@ const Sauce = () => {
     <div className="bowl-item">
       {sauces.map((item, index) => {
         return (
-          <p key={index}>{index+1}. {item.name}</p>
+          <div key={index}>
+            <p key={index}>{index+1}. {item.name}</p>
+            <hr />
+          </div>
         )
       })}
     </div>
