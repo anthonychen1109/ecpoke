@@ -1,3 +1,11 @@
+h2 {
+  font-family: FZShuTi;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+}
+
 // ###################### HEADER #########################
 .header {
   background-image: url('../images/500.JPG');
@@ -42,7 +50,7 @@
   }
 }
 
-// ###################### PARALLAX #########################
+// ###################### Build #########################
 .build-own {
   background-color: black;
   padding-top: 40px;
@@ -74,6 +82,9 @@
     justify-content: center;
     h2 {
       padding-top: 20px;
+    }
+    .bowl-left, .bowl-right {
+      padding-bottom: 40px;
     }
     @media only screen and (max-width: 800px) {
       flex-direction: column;
@@ -114,9 +125,11 @@
 .gallery {
   display: flex;
   flex-direction: column;
+  padding-bottom: 40px;
   padding-top: 40px;
   h2 {
     text-align: center;
+    padding-bottom: 20px;
   }
 }
 
@@ -159,8 +172,9 @@
 
 .contact {
   background-color: black;
+  padding-bottom: 50px;
   h2 {
-    color: white;
+    color: #BCAAA4;
     text-align: center;
   }
   .contact-header {
@@ -169,10 +183,21 @@
   .contact-info {
     display: flex;
     padding-top: 50px;
+    div {
+      padding: 0 5px 0 5px;
+    }
+    @media only screen and (max-width: 800px) {
+      flex-direction: column;
+    }
   }
   .contact-left {
+    padding-bottom: 40px;
     p {
       color: white;
+      text-align: center;
     }
+  }
+  .contact-right {
+    flex-grow: 2;
   }
 }

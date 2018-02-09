@@ -1,3 +1,9 @@
+h2 {
+  font-family: FZShuTi; }
+
+p {
+  font-family: 'Roboto', sans-serif; }
+
 .header {
   background-image: url("../images/500.JPG");
   background-position: 50% 50%;
@@ -58,6 +64,8 @@
     justify-content: center; }
     .customize .bowl h2 {
       padding-top: 20px; }
+    .customize .bowl .bowl-left, .customize .bowl .bowl-right {
+      padding-bottom: 40px; }
     @media only screen and (max-width: 800px) {
       .customize .bowl {
         flex-direction: column; }
@@ -84,9 +92,11 @@
 .gallery {
   display: flex;
   flex-direction: column;
+  padding-bottom: 40px;
   padding-top: 40px; }
   .gallery h2 {
-    text-align: center; }
+    text-align: center;
+    padding-bottom: 20px; }
 
 .modal-img {
   max-width: 300px; }
@@ -113,16 +123,27 @@
   text-align: center; }
 
 .contact {
-  background-color: black; }
+  background-color: black;
+  padding-bottom: 50px; }
   .contact h2 {
-    color: white;
+    color: #BCAAA4;
     text-align: center; }
   .contact .contact-header {
     padding-top: 50px; }
   .contact .contact-info {
     display: flex;
     padding-top: 50px; }
-  .contact .contact-left p {
-    color: white; }
+    .contact .contact-info div {
+      padding: 0 5px 0 5px; }
+    @media only screen and (max-width: 800px) {
+      .contact .contact-info {
+        flex-direction: column; } }
+  .contact .contact-left {
+    padding-bottom: 40px; }
+    .contact .contact-left p {
+      color: white;
+      text-align: center; }
+  .contact .contact-right {
+    flex-grow: 2; }
 
 /*# sourceMappingURL=styles.css.map */
