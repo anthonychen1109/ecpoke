@@ -45,6 +45,7 @@
 // ###################### PARALLAX #########################
 .build-own {
   background-color: black;
+  padding-top: 40px;
 }
 
 .customize {
@@ -106,17 +107,35 @@
 }
 
 // ###################### GALLERY #########################
+.gallery-container {
+  background-color: #FAEBD7;
+}
 
 .gallery {
   display: flex;
-  flex-wrap: wrap;
-  div {
-    max-width: 300px;
-    img {
-      max-width: 100%;
+  flex-direction: column;
+  padding-top: 40px;
+  h2 {
+    text-align: center;
+  }
+}
+
+
+.modal-img {
+  max-width: 300px;
+}
+
+.grid-item {
+  width:33.33%;
+  img {
+    padding: 3px;
+    max-width: 100%;
+    @media only screen and (max-width: 800px) {
+      padding: 1px;
     }
   }
 }
+
 
 // ###################### ORDER #########################
 .order {
@@ -150,5 +169,10 @@
   .contact-info {
     display: flex;
     padding-top: 50px;
+  }
+  .contact-left {
+    p {
+      color: white;
+    }
   }
 }

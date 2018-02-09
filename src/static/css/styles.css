@@ -32,7 +32,8 @@
       color: white; }
 
 .build-own {
-  background-color: black; }
+  background-color: black;
+  padding-top: 40px; }
 
 .customize {
   background-color: #FAEBD7;
@@ -77,13 +78,27 @@
   .customize .bowl-right {
     padding: 0 40px 0 200px; }
 
+.gallery-container {
+  background-color: #FAEBD7; }
+
 .gallery {
   display: flex;
-  flex-wrap: wrap; }
-  .gallery div {
-    max-width: 300px; }
-    .gallery div img {
-      max-width: 100%; }
+  flex-direction: column;
+  padding-top: 40px; }
+  .gallery h2 {
+    text-align: center; }
+
+.modal-img {
+  max-width: 300px; }
+
+.grid-item {
+  width: 33.33%; }
+  .grid-item img {
+    padding: 3px;
+    max-width: 100%; }
+    @media only screen and (max-width: 800px) {
+      .grid-item img {
+        padding: 1px; } }
 
 .order .order-grouping {
   top: 50%;
@@ -107,5 +122,7 @@
   .contact .contact-info {
     display: flex;
     padding-top: 50px; }
+  .contact .contact-left p {
+    color: white; }
 
 /*# sourceMappingURL=styles.css.map */
