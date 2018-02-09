@@ -11,6 +11,41 @@
 h2, h1, h5 {
   font-family: Tiki; }
 
+.fixed-navbar {
+  background-color: white;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 10; }
+  .fixed-navbar ul {
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    justify-content: space-evenly;
+    top: 0; }
+    .fixed-navbar ul li {
+      font-size: 1.5em;
+      list-style: none;
+      padding-top: 10px; }
+
+.navbar {
+  background-color: white;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 9000; }
+  .navbar ul {
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    justify-content: space-evenly;
+    top: 0; }
+    .navbar ul li {
+      font-size: 1.5em;
+      list-style: none;
+      padding-top: 10px; }
+
+.hide {
+  display: none; }
+
 .header {
   background-image: url("../images/500.JPG");
   background-position: 50% 50%;
@@ -20,6 +55,7 @@ h2, h1, h5 {
   .header .header-logo {
     margin: 0 auto;
     max-width: 200px;
+    padding-top: 60px;
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
