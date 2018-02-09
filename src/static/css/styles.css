@@ -121,6 +121,8 @@ p {
 .order div {
   padding-top: 40px;
   text-align: center; }
+  .order div button {
+    padding: 20px; }
 
 .contact {
   background-color: black;
