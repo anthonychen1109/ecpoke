@@ -43,7 +43,7 @@ p {
     padding-bottom: $padding-bottom + 10;
     padding-top: $padding-top+ 10;
     h1 {
-      color: red;
+      color: #639fb9;
       font-family: 'Niconne', cursive;
       text-align: center;
     }
@@ -61,6 +61,7 @@ p {
 .build-own {
   background-color: $theme-background;
   padding-top: $padding-top;
+  padding-bottom: $padding-bottom;
 }
 
 .customize {
@@ -135,6 +136,8 @@ p {
   padding-bottom: $padding-bottom;
   padding-top: $padding-top;
   h2 {
+    color: #639fb9;
+    font-family: 'Niconne', cursive;
     text-align: center;
     padding-bottom: $padding-bottom / 2;
   }
@@ -142,7 +145,7 @@ p {
 
 
 .modal-img {
-  max-width: 300px;
+  max-width: 100%;
 }
 
 .grid-item {
@@ -184,7 +187,7 @@ p {
   background-color: $theme-background;
   padding-bottom: $padding-bottom + 10;
   h2 {
-    color: #BCAAA4;
+    color: #639fb9;
     text-align: center;
   }
   .contact-header {
@@ -203,7 +206,7 @@ p {
   .contact-left {
     padding-bottom: $padding-bottom;
     p {
-      color: white;
+      color: $para-color;
       text-align: center;
     }
   }
