@@ -1,3 +1,10 @@
+@import "variables";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
 h2 {
   font-family: FZShuTi;
 }
@@ -29,36 +36,36 @@ p {
 // ###################### ABOUT #########################
 
 .about {
-  background-color: black;
-  padding-bottom: 40px;
-  padding-top: 40px;
+  background-color: $theme-background;
+  padding-bottom: $padding-bottom;
+  padding-top: $padding-top;
   .about-text {
-    padding-bottom: 50px;
-    padding-top: 50px;
+    padding-bottom: $padding-bottom + 10;
+    padding-top: $padding-top+ 10;
     h1 {
       color: red;
       font-family: 'Niconne', cursive;
       text-align: center;
     }
     h6 {
-      color: white;
+      color: $header-color;
       text-align: center;
     }
     p {
-      color: white;
+      color: $para-color;
     }
   }
 }
 
 // ###################### Build #########################
 .build-own {
-  background-color: black;
-  padding-top: 40px;
+  background-color: $theme-background;
+  padding-top: $padding-top;
 }
 
 .customize {
   background-color: #FAEBD7;
-  padding-top: 40px;
+  padding-top: $padding-top;
   .build {
     display: block;
     background-color: brown;
@@ -81,10 +88,10 @@ p {
     display: flex;
     justify-content: center;
     h2 {
-      padding-top: 20px;
+      padding-top: $padding-top / 2;
     }
     .bowl-left, .bowl-right {
-      padding-bottom: 40px;
+      padding-bottom: $padding-bottom;
     }
     @media only screen and (max-width: 800px) {
       flex-direction: column;
@@ -125,11 +132,11 @@ p {
 .gallery {
   display: flex;
   flex-direction: column;
-  padding-bottom: 40px;
-  padding-top: 40px;
+  padding-bottom: $padding-bottom;
+  padding-top: $padding-top;
   h2 {
     text-align: center;
-    padding-bottom: 20px;
+    padding-bottom: $padding-bottom / 2;
   }
 }
 
@@ -139,7 +146,7 @@ p {
 }
 
 .grid-item {
-  width:33.33%;
+  width: 33.33%;
   img {
     padding: 3px;
     max-width: 100%;
@@ -157,13 +164,13 @@ p {
     left: 50%;
   }
   h2 {
-    color: white;
-    padding-top: 40px;
+    color: $header-color;
+    padding-top: $padding-top;
     text-align: center;
     text-shadow: 0px 0px 3px black;
   }
   div {
-    padding-top: 40px;
+    padding-top: $padding-top;
     text-align: center;
     button {
       padding: 20px;
@@ -174,18 +181,18 @@ p {
 // ###################### CONTACT #########################
 
 .contact {
-  background-color: black;
-  padding-bottom: 50px;
+  background-color: $theme-background;
+  padding-bottom: $padding-bottom + 10;
   h2 {
     color: #BCAAA4;
     text-align: center;
   }
   .contact-header {
-    padding-top: 50px;
+    padding-top: $padding-top + 10;
   }
   .contact-info {
     display: flex;
-    padding-top: 50px;
+    padding-top: $padding-top + 10;
     div {
       padding: 0 5px 0 5px;
     }
@@ -194,7 +201,7 @@ p {
     }
   }
   .contact-left {
-    padding-bottom: 40px;
+    padding-bottom: $padding-bottom;
     p {
       color: white;
       text-align: center;
