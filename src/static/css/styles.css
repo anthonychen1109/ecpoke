@@ -12,6 +12,7 @@ h2, h1, h5 {
   font-family: Tiki; }
 
 .fixed-navbar {
+  display: none;
   background-color: white;
   top: 0;
   position: fixed;
@@ -59,7 +60,7 @@ h2, h1, h5 {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 85vh; }
+  height: 100vh; }
   .header .header-logo {
     margin: 0 auto;
     max-width: 200px;
@@ -213,6 +214,9 @@ h2, h1, h5 {
     flex-grow: 2; }
 
 @media only screen and (max-width: 800px) {
+  .fixed-navbar {
+    display: block; }
+
   .navbar {
     display: none; }
 
