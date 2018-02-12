@@ -24,7 +24,7 @@ class App extends Component {
   dropDownMenu() {
     let x = document.getElementById('dropDownClick');
     if (x.className === 'navbar-list') {
-      x.className = 'responsive';
+      x.className = ' responsive animated fadeInDown';
     } else {
       x.className = 'navbar-list';
     }
