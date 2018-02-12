@@ -238,6 +238,10 @@ h2, h1, h5 {
   top: 50%;
   left: 50%;
   .order-grouping {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
   h2 {
     color: $header-color;
@@ -246,7 +250,7 @@ h2, h1, h5 {
     text-shadow: 0px 0px 3px black;
   }
   div {
-    padding-top: $padding-top;
+    // padding-top: $padding-top;
     text-align: center;
     button {
       background: linear-gradient(#90CAF9, #42A5F5);
@@ -254,6 +258,10 @@ h2, h1, h5 {
       padding: 20px;
     }
   }
+}
+
+.order-btn {
+  padding-top: 40px;
 }
 
 // ###################### CONTACT #########################
