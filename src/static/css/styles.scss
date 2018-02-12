@@ -41,6 +41,13 @@ h2, h1, h5 {
       list-style: none;
       padding-top: 10px;
     }
+    a {
+      color: black;
+      text-decoration: none;
+    }
+    .dropDownIcon {
+      display: none;
+    }
   }
 }
 
@@ -59,6 +66,10 @@ h2, h1, h5 {
       font-size: 1.5em;
       list-style: none;
       padding-top: 10px;
+    }
+    a {
+      color: black;
+      text-decoration: none;
     }
   }
 }
@@ -276,5 +287,53 @@ h2, h1, h5 {
   }
   .contact-right {
     flex-grow: 2;
+  }
+}
+
+
+// ###################### MOBILE #########################
+@media only screen and (max-width: 800px) {
+  .navbar {
+    display: none;
+  }
+
+  ul.navbar-list {
+    li:not(:nth-child(3)) {
+      display: none;
+    }
+    li.dropDownIcon {
+      display: block;
+      padding-right: 10px;
+    }
+    .nav-logo {
+      margin: 0 auto;
+    }
+    a {
+      color: black;
+      text-decoration: none;
+    }
+  }
+
+  ul.responsive {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    li {
+      text-align: left;
+      padding-left: 10px;
+    }
+    li:nth-child(3) {
+      display: none;
+    }
+    .dropDownIcon {
+      position: absolute;
+      top: 0;
+      padding-right: 10px;
+      right: 0;
+    }
+    a {
+      color: black;
+      text-decoration: none;
+    }
   }
 }
