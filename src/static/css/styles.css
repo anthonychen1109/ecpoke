@@ -152,10 +152,12 @@ h2, h1, h5 {
 .modal-img {
   max-width: 100%; }
 
-.gal-modal img:hover {
-  opacity: .7;
-  transform: scale(1.05);
-  transition: .35s; }
+.gal-modal {
+  overflow: hidden; }
+  .gal-modal img:hover {
+    opacity: .7;
+    transform: scale(1.05);
+    transition: .35s; }
 
 .grid-item {
   width: 33.33%; }
