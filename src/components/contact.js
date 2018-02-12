@@ -3,7 +3,7 @@ import Iframe from 'react-iframe'
 
 const Contact = () => {
   return (
-    <div className="contact">
+    <div id="contact" className="contact">
       <h2 className="contact-header">Contact Us</h2>
       <div className="contact-info container">
         <div className="contact-left">

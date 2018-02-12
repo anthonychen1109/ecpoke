@@ -43,7 +43,7 @@ class Gallery extends Component {
       )
     })
     return (
-      <div className="gallery-container">
+      <div id="gallery" className="gallery-container">
         <div className="gallery container">
           <div>
             <h1>Gallery</h1>
