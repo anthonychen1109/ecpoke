@@ -241,6 +241,7 @@ h2, h1, h5 {
     ul.responsive li:nth-child(3) {
       display: none; }
     ul.responsive .dropDownIcon {
+      display: block;
       position: absolute;
       top: 0;
       padding-right: 10px;
