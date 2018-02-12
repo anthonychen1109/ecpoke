@@ -5,7 +5,7 @@ const Order = () => {
     <div className="order">
       <div className="order-grouping">
         <h2>Menu and Ordering</h2>
-        <div>
+        <div className="order-btn">
           <button className="btn btn-primary">Online Order/Menu</button>
         </div>
       </div>
