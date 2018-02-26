@@ -19,7 +19,7 @@ const About = () => {
             bowl.
           </p>
           <p>
-            &nbsp;&nbsp;&nbsp;&nbsp;At EC Poke all of our delicious Hawalian inspired poke are made using a’’non-oil’’ cooking
+            &nbsp;&nbsp;&nbsp;&nbsp;At EC Poke all of our delicious Hawaiian inspired poke are made using a’’non-oil’’ cooking
             procedure and a special filtered water system. We are used Premium ingredients and finished
             with the finest home made sauces.
           </p>

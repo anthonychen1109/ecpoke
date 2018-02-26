@@ -12,7 +12,7 @@ const Contact = () => {
           <p>Suite #109 Greenville, NC</p>
           <br />
           <h2>Phone</h2>
-          <p>252-571-0500</p>
+          <p>252-751-0500</p>
           <br />
           <h2>Hours</h2>
           <p>Sun - Thurs: 11:00am - 9:00pm</p>
