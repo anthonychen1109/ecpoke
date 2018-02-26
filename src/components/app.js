@@ -38,9 +38,10 @@ class App extends Component {
         <nav className="fixed-navbar">
           <ul id="dropDownClick" className="navbar-list">
             <li><a href="#about">About</a></li>
-            <li><a href="">Online Order/Menu</a></li>
+            <li><a href="#" data-glf-cuid="7b36cc74-4637-4adf-b894-883c432a5670" data-glf-ruid="4a6796d4-29ae-4e6b-a912-e510e79bdb82" >Online Order</a></li>
             <li className="nav-logo"><a href="/">EC Poke</a></li>
             <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#menu">Menu</a></li>
             <li><a href="#contact">Contact</a></li>
             <li className="dropDownIcon">
               <a
