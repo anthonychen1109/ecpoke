@@ -21,8 +21,11 @@ class Navbar extends Component {
           <li><a href="#about"
             onClick={() => this.scrollTo('about')}
             >About</a></li>
-          <li><a href="">Online Order/Menu</a></li>
+          <li><a href="">Online Order</a></li>
           <li><a href="/">EC Poke</a></li>
+          <li><a href="#menu"
+            onClick={() => this.scrollTo('menu')}
+            >Menu</a></li>
           <li><a href="#gallery"
             onClick={() => this.scrollTo('gallery')}
             >Gallery</a></li>

@@ -10,8 +10,9 @@ import Crunch from './crunch';
 
 const Build = () => {
   return (
-    <div className="build-own">
+    <div id="menu" className="build-own">
       <div className="customize container">
+        <h2 className="menu-header">Menu</h2>
         <div className="build">
           <div className="triangle">
           </div>

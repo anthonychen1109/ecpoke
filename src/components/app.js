@@ -5,6 +5,7 @@ import Navbar from './navbar';
 import Header from './header';
 import About from './about';
 import Build from './build';
+import SignatureBowl from './signaturebowl';
 import Gallery from './gallery';
 import Parallax from './parallax';
 import Contact from './contact';
@@ -55,6 +56,7 @@ class App extends Component {
         <About />
         <Gallery />
         <Build />
+        <SignatureBowl />
         <Parallax img={Parallax_img2} />
         <Contact />
       </div>

@@ -5,22 +5,86 @@ import Masonry from 'react-masonry-component';
 import GalleryModal from './modal';
 
 const images = [
-  {name: '414.JPG'},
-  {name: '428.JPG'},
-  {name: '479.JPG'},
-  {name: '481.JPG'},
-  {name: '488.JPG'},
-  {name: '491.JPG'},
-  {name: '493.JPG'},
-  {name: '500.JPG'},
-  {name: '504.JPG'},
-  {name: '507.JPG'},
-  {name: '564.JPG'},
-  {name: '583.JPG'},
-  {name: '588.JPG'},
-  {name: '666.JPG'},
-  {name: '769.JPG'},
-  {name: '773.JPG'}
+  {
+    name: '414.JPG',
+    item: '',
+    desc: ''
+  },
+  {
+    name: '428.JPG',
+    item: '',
+    desc: ''
+  },
+  {
+    name: '479.JPG',
+    item: '',
+    desc: ''
+  },
+  {
+    name: '481.JPG',
+    item: '',
+    desc: ''
+  },
+  {
+    name: '488.JPG',
+    item: '',
+    desc: ''
+  },
+  {
+    name: '491.JPG',
+    item: '',
+    desc: ''
+  },
+  {
+    name: '493.JPG',
+    item: '',
+    desc: ''
+  },
+  {
+    name: '500.JPG',
+    item: '',
+    desc: ''
+  },
+  {
+    name: '504.JPG',
+    item: '',
+    desc: ''
+  },
+  {
+    name: '507.JPG',
+    item: '',
+    desc: ''
+  },
+  {
+    name: '564.JPG',
+    item: '',
+    desc: ''
+  },
+  {
+    name: '583.JPG',
+    item: '',
+    desc: ''
+  },
+  {
+    name: '588.JPG',
+    item: '',
+    desc: ''
+  },
+  {
+    name: '666.JPG',
+    item: '',
+    desc: ''
+  },
+  {
+    name: '769.JPG',
+    item: '',
+    desc: ''
+  },
+  {
+    name: '773.JPG',
+    item: '',
+    desc: ''
+  }
 ]
 
 class Gallery extends Component {
