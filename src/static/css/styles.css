@@ -172,6 +172,23 @@ h2, h1, h5 {
           margin: 0 auto; } }
       .customize .signature .signature-image img {
         width: 100%; }
+  .customize .soup {
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px; }
+    .customize .soup .soup-menu {
+      display: flex;
+      justify-content: center; }
+      @media only screen and (max-width: 800px) {
+        .customize .soup .soup-menu {
+          justify-content: flex-start; } }
+      .customize .soup .soup-menu h2 {
+        line-height: 80px;
+        padding: 0 40px; }
+        @media only screen and (max-width: 800px) {
+          .customize .soup .soup-menu h2 {
+            font-size: 1.5em;
+            padding: 0 20px; } }
 
 .gallery-container {
   background-color: #639fb9; }

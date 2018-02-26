@@ -235,6 +235,27 @@ h2, h1, h5 {
     }
   }
 
+  .soup {
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    .soup-menu {
+      display: flex;
+      justify-content: center;
+      @media only screen and (max-width: 800px) {
+        justify-content: flex-start;
+      }
+      h2 {
+        line-height: 80px;
+        padding: 0 40px;
+        @media only screen and (max-width: 800px) {
+          font-size: 1.5em;
+          padding: 0 20px;
+        }
+      }
+    }
+  }
+
 }
 
 // ###################### GALLERY #########################
