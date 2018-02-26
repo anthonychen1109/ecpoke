@@ -134,6 +134,10 @@ h2, h1, h5 {
 
 .customize {
   padding-top: $padding-top;
+  .menu-header {
+    text-align: center;
+    padding-bottom: $padding-bottom;
+  }
   .build {
     display: block;
     background-color: $theme-color;
@@ -187,6 +191,48 @@ h2, h1, h5 {
 
   .sub-header {
     font-size: .8em;
+  }
+
+  .signature-container {
+    padding-top: 80px;
+  }
+
+  .signature {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+    @media only screen and (max-width: 800px) {
+      flex-direction: column;
+      margin-bottom: 40px;
+    }
+    .signature-items {
+      display: flex;
+      flex-direction: column;
+      max-width: 50%;
+      min-height: 200px;
+      @media only screen and (max-width: 800px) {
+        margin: 0 auto;
+        max-width: 100%;
+        min-height: 0;
+      }
+    }
+    .signature-item-price {
+      display: flex;
+      justify-content: space-evenly;
+      @media only screen and (max-width: 800px) {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+    .signature-image {
+      max-width: 200px;
+      @media only screen and (max-width: 800px) {
+        margin: 0 auto;
+      }
+      img {
+        width: 100%;
+      }
+    }
   }
 
 }

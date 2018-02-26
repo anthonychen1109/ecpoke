@@ -95,6 +95,9 @@ h2, h1, h5 {
 
 .customize {
   padding-top: 40px; }
+  .customize .menu-header {
+    text-align: center;
+    padding-bottom: 40px; }
   .customize .build {
     display: block;
     background-color: #639fb9;
@@ -135,6 +138,40 @@ h2, h1, h5 {
       padding-bottom: 10px; }
   .customize .sub-header {
     font-size: .8em; }
+  .customize .signature-container {
+    padding-top: 80px; }
+  .customize .signature {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0; }
+    @media only screen and (max-width: 800px) {
+      .customize .signature {
+        flex-direction: column;
+        margin-bottom: 40px; } }
+    .customize .signature .signature-items {
+      display: flex;
+      flex-direction: column;
+      max-width: 50%;
+      min-height: 200px; }
+      @media only screen and (max-width: 800px) {
+        .customize .signature .signature-items {
+          margin: 0 auto;
+          max-width: 100%;
+          min-height: 0; } }
+    .customize .signature .signature-item-price {
+      display: flex;
+      justify-content: space-evenly; }
+      @media only screen and (max-width: 800px) {
+        .customize .signature .signature-item-price {
+          flex-direction: column;
+          text-align: center; } }
+    .customize .signature .signature-image {
+      max-width: 200px; }
+      @media only screen and (max-width: 800px) {
+        .customize .signature .signature-image {
+          margin: 0 auto; } }
+      .customize .signature .signature-image img {
+        width: 100%; }
 
 .gallery-container {
   background-color: #639fb9; }
