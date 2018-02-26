@@ -101,7 +101,6 @@ const SignatureBowl = () => {
             )
           })}
         </div>
-
       </div>
     </div>
   )
